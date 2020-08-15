@@ -6,7 +6,7 @@ services:
         stdin_open: true
         build:
             context: .
-            dockerfile: Dockerfile
+            dockerfile: Dockerfile.dev
         ports: 
             - "3000:3000"
         volumes: 
@@ -18,7 +18,7 @@ services:
         stdin_open: true
         build:
             context: .
-            dockerfile: Dockerfile
+            dockerfile: Dockerfile.dev
         volumes: 
             - /app/node_modules
             - C:\Users\ugur.coruh\Desktop\react-app\frontend:/app
